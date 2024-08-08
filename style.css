@@ -9,6 +9,9 @@ p {
   font-size: 1.2rem;
   line-height: 1.8rem;
 }
+img {
+  width: 100%;
+}
 header {
   padding: 12px;
   min-height: 100vh;
@@ -400,6 +403,8 @@ section h2 {
   padding: 6px;
   border-radius: 8px;
   margin-bottom: 24px;
+  width: 80%;
+  margin: 12px auto;
 }
 
 .review img {
@@ -474,6 +479,13 @@ section h2 {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.tour-slider {
+  width: 50%;
+}
+
+.tour-slider img {
+  object-fit: contain;
 }
 
 .vehicle {
