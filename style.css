@@ -21,7 +21,30 @@ header {
   justify-content: center;
   align-items: center;
 }
+form {
+  width: 770px;
+  margin: 0 auto;
+}
 
+.form-item {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 12px 0px;
+}
+.form-item label {
+  width: 30%;
+}
+
+.form-item input,
+.form-item textarea {
+  text-align: center;
+  width: 50%;
+}
+.passengers-wrapper {
+  display: flex;
+  width: 50%;
+  align-items: center;
+}
 #video-area {
   position: absolute;
   top: 0;
@@ -508,7 +531,6 @@ section h2 {
 .vehicle {
   display: flex;
   gap: 12px;
-  align-items: center;
   margin-bottom: 16px;
 }
 
