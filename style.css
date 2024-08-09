@@ -129,6 +129,7 @@ h2 {
   font-size: 4rem;
   text-shadow: 1px 1px 9px black;
   font-weight: 400;
+  margin-bottom: 1rem;
 }
 h3 {
   font-family: "Fraunces", serif;
@@ -151,6 +152,10 @@ h5 {
   text-shadow: 1px 1px 4px black;
   font-weight: 400;
   font-size: 1.2rem;
+  margin: 12px 0;
+}
+h6 {
+  font-size: 1.1rem;
   margin: 12px 0;
 }
 main {
@@ -224,6 +229,7 @@ label {
 section {
   max-width: 1600px;
   margin: 24px auto;
+  margin-bottom: 48px;
   padding: 0 20px;
 }
 section h2 {
@@ -522,6 +528,10 @@ section h2 {
 }
 .tour-slider {
   width: 50%;
+}
+
+.vehicle-slider {
+  width: 30%;
 }
 
 .tour-slider img {
