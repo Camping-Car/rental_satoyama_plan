@@ -240,6 +240,62 @@ section h2 {
   font-weight: 400;
 }
 
+#simulation_price {
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+#simulation_msg {
+  text-align: center;
+  font-size: 1.6rem;
+  color: #ba1e40;
+}
+.simulation-item {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4px;
+}
+.simulation-wrapper {
+  text-align: center;
+  border-radius: 1rem;
+  padding: 12px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+#simulation {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: left;
+  border: 1px solid black;
+  padding: 24px;
+  border-radius: 6px;
+}
+
+#simulation label {
+  width: 300px;
+  display: inline-block;
+}
+#simulation select {
+  width: 300px;
+  text-align: right;
+  padding-right: 12px;
+}
+
+#simulation option {
+  padding-right: 12px;
+}
+#simulation input {
+  border: none;
+  width: 300px;
+  text-align: right;
+  padding-right: 12px;
+}
+#planDetail option:disabled {
+  display: none;
+}
+#planDetail option {
+  display: block;
+}
 .scrolldown {
   position: absolute;
   color: white;
@@ -256,7 +312,54 @@ section h2 {
   opacity: 0;
   right: 41%;
 }
+.toggle {
+  display: none;
+}
+.Label {
+  font-family: "Fraunces", serif;
+  color: black;
+  text-shadow: 1px 1px 4px black;
+  padding: 1em;
+  display: block;
 
+  font-size: 1.2rem;
+}
+.Label::before {
+  /*タイトル横の矢印*/
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  -webkit-transform: rotate(45deg);
+  position: absolute;
+  top: calc(50% - 3px);
+  right: 20px;
+  transform: rotate(135deg);
+}
+.Label,
+.content {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transition: all 0.3s;
+}
+.content {
+  /*本文*/
+  height: 0;
+  margin-bottom: 10px;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.toggle:checked + .Label + .content {
+  /*開閉時*/
+  height: auto;
+  padding: 20px;
+  transition: all 0.3s;
+}
+.toggle:checked + .Label::before {
+  transform: rotate(-45deg) !important;
+}
 .faq input {
   position: absolute;
   opacity: 0;

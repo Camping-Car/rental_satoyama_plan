@@ -66,382 +66,255 @@
           autoplay
           loop
         >
-          <source src="./assets/EcotoursTSJ.mp4" type="video/mp4" />
+          <source src="./assets/main.mp4" type="video/mp4" />
           <p>動画を再生できる環境ではありません。</p>
         </video>
       </div>
     </header>
+    <section>
+      <form id="simulation" onchange="updateOptions()">
+        <div class="simulation-item">
+          <label for="members">passengers</label>
+          <select name="members" id="members">
+            <option>0</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+          </select>
+        </div>
+
+        <div class="simulation-item">
+          <label for="plan">Plan</label>
+          <select id="plan">
+            <option value="" disabled selected>Choose plan</option>
+            <option value="Fugaku">Fugaku</option>
+            <option value="Glamping">Glamping</option>
+          </select>
+        </div>
+
+        <div class="simulation-item">
+          <label for="planDetail">Plan Detail</label>
+          <select id="planDetail">
+            <option value="" disabled selected>Choose plan</option>
+
+            <option value="Glamping_2D1N">2D1N</option>
+            <option value="Glamping_3D2N">3D2N</option>
+
+            <option value="Fugaku_3D2N">3D2N</option>
+          </select>
+        </div>
+        <p id="simulation_price"></p>
+        <div>
+          <p id="simulation_msg"></p>
+        </div>
+      </form>
+    </section>
 
     <main>
       <section>
         <h2>Table of contents</h2>
+        <div class="grid-2">
+          <div class="tour-wrapper">
+            <h5>Mt. Fuji 3D2N FUGAKU Stay and Hokusai Ecotour Package</h5>
+            <div>
+              <img src="./assets/top_col1_bg.jpg" />
+              <!--
+              <div class="swiper tour-slider">
 
-        <div class="tour-wrapper">
-          <h5>Mt. Fuji 3D2N FUGAKU Stay and Hokusai Ecotour Package</h5>
-          <div class="tour-inner grid-2">
-            <div class="swiper tour-slider">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="./assets/top_col1_bg.jpg" />
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./assets/top_col1_bg.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/top_col2_bg.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/top_col3_bg.jpg" />
+                  </div>
                 </div>
-                <div class="swiper-slide">
-                  <img src="./assets/top_col2_bg.jpg" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="./assets/top_col3_bg.jpg" />
-                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
               </div>
-
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
+              -->
+              <p>
+                Have you ever seen ukiyoe paintings by one of the most world
+                famous artists, Katsushika Hokusai and wished to view Mt. Fuji
+                like him someday in Japan? Actually, our local town, Fujinomiya,
+                located at the western foot of Mt. Fuji, is where many of the
+                famous 36 Views of Mount Fuji and 100 Views of Mount Fuji were
+                painted. In addition, unlike the Fuji Five Lakes and Hakone,
+                where many tourists visit, our area still retains its authentic
+                culture and ancient landscape. Visitors can walk through
+                different villages, shrines and temples, view Mt. Fuji like
+                Hokusai and draw Mt. Fuji with a Japanese brush (筆)like
+                Hokusai. You can also enjoy staying the Hokusai-themed Japanese
+                private house in the middle of a village by Fuji-Hakone-Izu
+                National Park. There are many walking trails around the
+                guesthouse, so this ecotour package is perfect for nature and
+                culture walking lovers!
+              </p>
             </div>
-            <p>
-              Have you ever seen ukiyoe paintings by one of the most world
-              famous artists, Katsushika Hokusai and wished to view Mt. Fuji
-              like him someday in Japan? Actually, our local town, Fujinomiya,
-              located at the western foot of Mt. Fuji, is where many of the
-              famous 36 Views of Mount Fuji and 100 Views of Mount Fuji were
-              painted. In addition, unlike the Fuji Five Lakes and Hakone, where
-              many tourists visit, our area still retains its authentic culture
-              and ancient landscape. Visitors can walk through different
-              villages, shrines and temples, view Mt. Fuji like Hokusai and draw
-              Mt. Fuji with a Japanese brush (筆)like Hokusai. You can also
-              enjoy staying the Hokusai-themed Japanese private house in the
-              middle of a village by Fuji-Hakone-Izu National Park. There are
-              many walking trails around the guesthouse, so this ecotour package
-              is perfect for nature and culture walking lovers!
-            </p>
           </div>
-        </div>
 
-        <div class="tour-wrapper">
-          <h5>Glamping and Ecotour Packages</h5>
-          <div class="grid-2">
-            <div class="swiper tour-slider">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="./assets/top_col1_bg.jpg" />
+          <div class="tour-wrapper">
+            <h5>Glamping and Ecotour Packages</h5>
+            <div>
+              <img src="./assets/top_col1_bg.jpg" />
+              <!--
+              <div class="swiper tour-slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./assets/top_col1_bg.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/top_col2_bg.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/top_col3_bg.jpg" />
+                  </div>
                 </div>
-                <div class="swiper-slide">
-                  <img src="./assets/top_col2_bg.jpg" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="./assets/top_col3_bg.jpg" />
-                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
               </div>
-
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
+                -->
+              <p>
+                Enjoy nature and culture ecotours by local English-speaking
+                guides in and around Mt. Fuji staying at private glamping site
+                (only for two small groups) seeing majestic views of Mt. Fuji.
+                Early morning nature walks are available everyday in Mt. Fuji
+                National Park. You can select one full-day ecotour from Village
+                Culture E-bike, Nature E-bike, Culture Walk, Forest Walk,
+                Farm-to-Table Tours, etc.
+              </p>
             </div>
-            <p>
-              Enjoy nature and culture ecotours by local English-speaking guides
-              in and around Mt. Fuji staying at private glamping site (only for
-              two small groups) seeing majestic views of Mt. Fuji. Early morning
-              nature walks are available everyday in Mt. Fuji National Park. You
-              can select one full-day ecotour from Village Culture E-bike,
-              Nature E-bike, Culture Walk, Forest Walk, Farm-to-Table Tours,
-              etc.
-            </p>
-          </div>
-        </div>
-
-        <div class="tour-wrapper">
-          <h5>Private Mt. Fuji Day Ecotours</h5>
-
-          <div class="grid-2">
-            <div class="swiper tour-slider">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="./assets/top_col1_bg.jpg" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="./assets/top_col2_bg.jpg" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="./assets/top_col3_bg.jpg" />
-                </div>
-              </div>
-
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
-            </div>
-
-            <p>
-              Exploring Mt Fuji by E-bike in this unique one-day ecotour. Visit
-              Lake Tanuki National Park, ride through a traditional Japanese
-              village, see falls and try fresh spring water from Mt Fuji. Enjoy
-              fresh rainbow trout lunch at a local trout-farm and then ride to
-              the World Heritage Shiraito falls. Finish the day at our glamping
-              site with a local craft beer sounded by paddy field in front of
-              Mt. Fuji!
-            </p>
           </div>
         </div>
       </section>
       <section>
         <h2>Price Plan</h2>
 
-        <h5>1Day Ecotours (Private ONLY)</h5>
-        <table>
-          <tr>
-            <th>Name</th>
-            <th>Nett Price/pax or car (Tax is not included)</th>
-            <th>Min. number of pax</th>
-            <th>Max. number of pax</th>
-            <th>What's included</th>
-          </tr>
-          <tr>
-            <td>①Mt. Fuji Nature E-bike Ecotour</td>
-            <td>
-              1 PAX: 90,000 JPY/ pax<br />
-              2 PAX: 45,000 JPY/ pax<br />
-              3 PAX: 43,000 JPY/ pax<br />
-              4-8 PAX: 40,000 JPY/ pax
-            </td>
-            <td>1</td>
-            <td>8</td>
-            <td>
-              Transportation: 9:40 Pick up and 16:30 drop off from and to
-              Shin-Fuji station on the date<br />Meal: 1 lunch
-            </td>
-          </tr>
-          <tr>
-            <td>②Village E-Bike Ecotour at the foot of Mt. Fuji</td>
-            <td>
-              1 PAX: 90,000 JPY/ pax<br />
-              2 PAX: 45,000 JPY/ pax<br />
-              3 PAX: 43,000 JPY/ pax<br />
-              4-8 PAX: 40,000 JPY/ pax
-            </td>
-            <td>1</td>
-            <td>8</td>
-            <td>
-              Transportation: 9:40 Pick up and 16:30 drop off at Shin-Fuji
-              station on the date<br />Meal: 1 lunch
-            </td>
-          </tr>
-          <tr>
-            <td>
-              ③Fujinomiya Township and Culture Ecotour <br />*Not available
-              12/25-1/5 (New year holiday)
-            </td>
-            <td>
-              1 PAX: 90,000 JPY/ pax<br />
-              2 PAX: 45,000 JPY/ pax<br />
-              3 PAX: 43,000 JPY/ pax<br />
-              4-8 PAX: 40,000 JPY/ pax
-            </td>
-            <td>1</td>
-            <td>8</td>
-            <td>
-              Transportation: 9:40 Pick up and 16:30 drop off at Shin-Fuji
-              station on the date<br />Meal: 1 lunch
-            </td>
-          </tr>
-          <tr>
-            <td>④Mt. Fuji Hokusai Walk (NEW)</td>
-            <td>
-              1 PAX: 90,000 JPY/ pax<br />
-              2 PAX: 45,000 JPY/ pax<br />
-              3 PAX: 43,000 JPY/ pax<br />
-              4-8 PAX: 40,000 JPY/ pax
-            </td>
-            <td>1</td>
-            <td>8</td>
-            <td>
-              Transportation: 9:40 Pick up and 16:30 drop off at Shin-Fuji
-              station on the date<br />Meal: 1 lunch
-            </td>
-          </tr>
-          <tr>
-            <td>
-              ⑤Mt. Fuji Hiking and Shrine Ecotour <br />15th June to 15th
-              October ONLY
-            </td>
-            <td>
-              1 PAX: 90,000 JPY/ pax<br />
-              2 PAX: 45,000 JPY/ pax<br />
-              3 PAX: 43,000 JPY/ pax<br />
-              4-8 PAX: 40,000 JPY/ pax
-            </td>
-            <td>1</td>
-            <td>8</td>
-            <td>
-              Transportation: 9:40 Pick up and 16:30 drop off at Shin-Fuji
-              station on the date<br />Meal: 1 lunch<br />Need additional costs
-              during private car regulation period climbing Mt. Fuji: 10th July
-              ~ 10th September<br />Bus Fees (Round Trip)<br />Adult: 2,800
-              YEN/PAX<br />Child: 1,500 YEN/PAX<br />a ¥1,000 Mt Fuji
-              Conservation Contribution Fee is included in the tour price.
-            </td>
-          </tr>
-          <tr>
-            <td>⑥Mt. Fuji Nature Walk (NEW)</td>
-            <td>
-              1 PAX: 90,000 JPY/ pax<br />
-              2 PAX: 45,000 JPY/ pax<br />
-              3 PAX: 43,000 JPY/ pax<br />
-              4-8 PAX: 40,000 JPY/ pax
-            </td>
-            <td>1</td>
-            <td>8</td>
-            <td>
-              Transportation: 9:40 Pick up and 16:30 drop off at Shin-Fuji
-              station on the date<br />Meal: 1 lunch
-            </td>
-          </tr>
-        </table>
-
-        <h5>Glamping and Ecotour Packages</h5>
-        <table>
-          <tr>
-            <th>Name</th>
-            <th>Nett Price/pax or car (Tax is not included)</th>
-            <th>Min. number of pax</th>
-            <th>Max. number of pax</th>
-            <th>What's included</th>
-          </tr>
-          <tr>
-            <td>3D2N Mt. Fuji Satoyama Vacation Package</td>
-            <td>
-              1 PAX: 280,000 JPY/ pax<br />
-              2 PAX: 140,000 JPY/ pax<br />
-              3 PAX: 135,000 JPY/ pax<br />
-              4 PAX: 130,000 JPY/ pax<br />
-              5-8 PAX: 125,000 JPY/ pax<br />
-              Child(3-10 y.o.): 100,000 JPY/ pax<br />
-              *Private Use for Double the Price.<br />
-              (For 5-8 persons is private stay.)
-            </td>
-            <td>1</td>
-            <td>8</td>
-            <td>
-              Day 1: 14:10 Pick-up @ Shin-Fuji station<br />
-              15:00 Glamping Check-in<br />
-              Day 2: 10:30 1 day tour (Select one from one-day ecotours ①～⑥ +
-              Farm-to-Table Tours (May to Nov ONLY))<br />
-              Day 3: 10:30 Check-out<br />
-              11:30 Drop-off @ Shin-Fuji station<br />
-              Meal: 2 dinners, 2 breakfasts, 1 lunch<br />
-              Accommodation: 2 nights in Bell tent<br />
-              Transportation: Pick up and drop off at Shin-Fuji station
-            </td>
-          </tr>
-          <tr>
-            <td>2D1N Mt. Fuji Satoyama Vacation Package</td>
-            <td>
-              1 PAX: 180,000 JPY/ pax<br />
-              2 PAX: 90,000 JPY/ pax<br />
-              3 PAX: 85,000 JPY/ pax<br />
-              4 PAX: 80,000 JPY/ pax<br />
-              5-8 PAX: 75,000 JPY/ pax<br />
-              Child(3-10 y.o.): 50,000 JPY/ pax<br />
-              *Private Use for Double the Price.<br />
-              (For 5-8 persons is private stay.)
-            </td>
-            <td>1</td>
-            <td>8</td>
-            <td>
-              Day 1: 14:10 Pick-up @ Shin-Fuji station<br />
-              15:00 Glamping Check-in<br />
-              Day 2: 10:30 Check-out<br />
-              1 day tour (Select one from one-day ecotours ①～⑥)<br />
-              16:30 Drop-off @ Shin-Fuji station<br />
-              Meal: 1 dinner, 1 breakfast, 1 lunch<br />
-              Accommodation: 1 night in Bell tent<br />
-              Transportation: Pick up and drop off at Shin-Fuji station
-            </td>
-          </tr>
-        </table>
-
-        <h5>FUGAKU Stay and Ecotours' Package</h5>
-        <table>
-          <tr>
-            <th>Name</th>
-            <th>Nett Price/pax (Tax is not included)</th>
-            <th>Min. number of pax</th>
-            <th>Max. number of pax</th>
-            <th>What's included</th>
-          </tr>
-          <tr>
-            <td>3D2N FUGAKU Stay and Ecotours' Package</td>
-            <td>
-              1 PAX: 700,000 JPY/ pax<br />
-              2 PAX: 350,000 JPY/ pax<br />
-              3 PAX: 300,000 JPY/ pax<br />
-              4 PAX: 275,000 JPY/ pax<br />
-              5-8 PAX: 225,000 JPY/ pax<br />
-              *Only over 11 yrs<br />
-              *2 Beds are available
-            </td>
-            <td>1</td>
-            <td>8</td>
-            <td>
-              Day 1: 14:10 Pick-up @ Shin-Fuji station<br />
-              15:00 FUGAKU House Check-in<br />
-              Day 2: 10:00~ Hokusai Walk<br />
-              Day 3: 10:30 Check-out<br />
-              1 day tour (Select one from one-day ecotours ①～⑥)<br />
-              16:30 Drop-off @ Shin-Fuji station<br />
-              Meal: 2 dinners, 2 breakfasts, 2 lunches<br />
-              Accommodation: 2 nights at FUGAKU House<br />
-              Transportation: Pick up and drop off at Shin-Fuji station
-            </td>
-          </tr>
-        </table>
+        <input id="block-01" type="checkbox" class="toggle" />
+        <label class="Label" for="block-01"
+          >FUGAKU Stay and Ecotours' Package</label
+        >
+        <div class="content">
+          <table>
+            <tr>
+              <th>Name</th>
+              <th>Nett Price/pax (Tax is not included)</th>
+              <th>Min. number of pax</th>
+              <th>Max. number of pax</th>
+              <th>What's included</th>
+            </tr>
+            <tr>
+              <td>3D2N FUGAKU Stay and Ecotours' Package</td>
+              <td>
+                1 PAX: 700,000 JPY/ pax<br />
+                2 PAX: 350,000 JPY/ pax<br />
+                3 PAX: 300,000 JPY/ pax<br />
+                4 PAX: 275,000 JPY/ pax<br />
+                5-8 PAX: 225,000 JPY/ pax<br />
+                *Only over 11 yrs<br />
+                *2 Beds are available
+              </td>
+              <td>1</td>
+              <td>8</td>
+              <td>
+                Day 1: 14:10 Pick-up @ Shin-Fuji station<br />
+                15:00 FUGAKU House Check-in<br />
+                Day 2: 10:00~ Hokusai Walk<br />
+                Day 3: 10:30 Check-out<br />
+                1 day tour (Select one from one-day ecotours ①～⑥)<br />
+                16:30 Drop-off @ Shin-Fuji station<br />
+                Meal: 2 dinners, 2 breakfasts, 2 lunches<br />
+                Accommodation: 2 nights at FUGAKU House<br />
+                Transportation: Pick up and drop off at Shin-Fuji station
+              </td>
+            </tr>
+          </table>
+        </div>
+        <input id="block-02" type="checkbox" class="toggle" />
+        <label class="Label" for="block-02"
+          >FUGAKU Stay and Ecotours' Package</label
+        >
+        <div class="content">
+          <table>
+            <tr>
+              <th>Name</th>
+              <th>Nett Price/pax or car (Tax is not included)</th>
+              <th>Min. number of pax</th>
+              <th>Max. number of pax</th>
+              <th>What's included</th>
+            </tr>
+            <tr>
+              <td>3D2N Mt. Fuji Satoyama Vacation Package</td>
+              <td>
+                1 PAX: 280,000 JPY/ pax<br />
+                2 PAX: 140,000 JPY/ pax<br />
+                3 PAX: 135,000 JPY/ pax<br />
+                4 PAX: 130,000 JPY/ pax<br />
+                5-8 PAX: 125,000 JPY/ pax<br />
+                Child(3-10 y.o.): 100,000 JPY/ pax<br />
+                *Private Use for Double the Price.<br />
+                (For 5-8 persons is private stay.)
+              </td>
+              <td>1</td>
+              <td>8</td>
+              <td>
+                Day 1: 14:10 Pick-up @ Shin-Fuji station<br />
+                15:00 Glamping Check-in<br />
+                Day 2: 10:30 1 day tour (Select one from one-day ecotours ①～⑥ +
+                Farm-to-Table Tours (May to Nov ONLY))<br />
+                Day 3: 10:30 Check-out<br />
+                11:30 Drop-off @ Shin-Fuji station<br />
+                Meal: 2 dinners, 2 breakfasts, 1 lunch<br />
+                Accommodation: 2 nights in Bell tent<br />
+                Transportation: Pick up and drop off at Shin-Fuji station
+              </td>
+            </tr>
+            <tr>
+              <td>2D1N Mt. Fuji Satoyama Vacation Package</td>
+              <td>
+                1 PAX: 180,000 JPY/ pax<br />
+                2 PAX: 90,000 JPY/ pax<br />
+                3 PAX: 85,000 JPY/ pax<br />
+                4 PAX: 80,000 JPY/ pax<br />
+                5-8 PAX: 75,000 JPY/ pax<br />
+                Child(3-10 y.o.): 50,000 JPY/ pax<br />
+                *Private Use for Double the Price.<br />
+                (For 5-8 persons is private stay.)
+              </td>
+              <td>1</td>
+              <td>8</td>
+              <td>
+                Day 1: 14:10 Pick-up @ Shin-Fuji station<br />
+                15:00 Glamping Check-in<br />
+                Day 2: 10:30 Check-out<br />
+                1 day tour (Select one from one-day ecotours ①～⑥)<br />
+                16:30 Drop-off @ Shin-Fuji station<br />
+                Meal: 1 dinner, 1 breakfast, 1 lunch<br />
+                Accommodation: 1 night in Bell tent<br />
+                Transportation: Pick up and drop off at Shin-Fuji station
+              </td>
+            </tr>
+          </table>
+        </div>
       </section>
       <section>
         <h2>Contents Of Experience</h2>
-        <h5>Mt. Fuji 3D2N FUGAKU Stay and Hokusai Ecotour Package</h5>
-        <table>
-          <tr>
-            <th></th>
-            <th>ltinerary</th>
-          </tr>
-          <tr>
-            <td>Day 1</td>
-            <td>
-              14:10 Meet at Shin-Fuji Station --- Van --- 15:00 FUGAKU House ---
-              Dinner: Local Japanese Cuisine (Catering)--- Free time ---
-              Overnight
-            </td>
-          </tr>
 
-          <tr>
-            <td>Day 2</td>
-            <td>
-              Local breakfast --- Free time --- Hokusai Walk (Enjoy walking in
-              our local village with our local guide, viewing Mt. Fuji like
-              Hokusai, having a traditional Japanese organic lunch and drawing
-              Mt. Fuji like Hokusai at the foot of Mt. Fuji) --- Local Dinner
-              (BBQ, Local Restaurant or Hotpot) --- Overnight *Local JIBIE
-              Cuisine will be available for additional fee.
-            </td>
-          </tr>
-
-          <tr>
-            <td>Day 3</td>
-            <td>
-              Local breakfast --- Free time --- Hokusai Walk (Enjoy walking in
-              our local village with our local guide, viewing Mt. Fuji like
-              Hokusai, having a traditional Japanese organic lunch and drawing
-              Mt. Fuji like Hokusai at the foot of Mt. Fuji) --- Local Dinner
-              (BBQ, Local Restaurant or Hotpot) --- Overnight *Local JIBIE
-              Cuisine will be available for additional fee.
-            </td>
-          </tr>
-        </table>
-
-        <h5>3D2N Private Ecotours and Glamping Package</h5>
-        <div class="grid-2">
-          <p>
-            Enjoy nature and culture ecotours by local English-speaking guides
-            in and around Mt. Fuji staying at private glamping site (only for
-            two small groups) seeing majestic views of Mt. Fuji. Early morning
-            nature walks are available everyday in Mt. Fuji National Park. You
-            can select one full-day ecotour from Village Culture E-bike, Nature
-            E-bike, Culture Walk, Forest Walk, Farm-to-Table Tours, etc.
-          </p>
+        <input id="block-03" type="checkbox" class="toggle" />
+        <label class="Label" for="block-03"
+          >FUGAKU Stay and Ecotours' Package</label
+        >
+        <div class="content">
           <table>
             <tr>
               <th></th>
@@ -459,56 +332,118 @@
             <tr>
               <td>Day 2</td>
               <td>
-                Local breakfast *One full day ecotour (Select one from one day
-                ecotours 1~6) + Farm-to-Table Tours (May to Nov ONLY), Local
-                Lunch --- Local Dinner (BBQ, Local Restaurant or Hotpot) ---
-                Overnight
+                Local breakfast --- Free time --- Hokusai Walk (Enjoy walking in
+                our local village with our local guide, viewing Mt. Fuji like
+                Hokusai, having a traditional Japanese organic lunch and drawing
+                Mt. Fuji like Hokusai at the foot of Mt. Fuji) --- Local Dinner
+                (BBQ, Local Restaurant or Hotpot) --- Overnight *Local JIBIE
+                Cuisine will be available for additional fee.
               </td>
             </tr>
 
             <tr>
               <td>Day 3</td>
               <td>
-                Morning Walk (if our guests wish!) 10:30 Check-out 11:30
-                Shin-fuji station Drop-off *Optional Ecotour is available for
-                additional fees.
+                Local breakfast --- Free time --- Hokusai Walk (Enjoy walking in
+                our local village with our local guide, viewing Mt. Fuji like
+                Hokusai, having a traditional Japanese organic lunch and drawing
+                Mt. Fuji like Hokusai at the foot of Mt. Fuji) --- Local Dinner
+                (BBQ, Local Restaurant or Hotpot) --- Overnight *Local JIBIE
+                Cuisine will be available for additional fee.
               </td>
             </tr>
           </table>
         </div>
-        <h5>3D1N Private Ecotours and Glamping Package</h5>
-        <div class="grid-2">
-          <p>
-            f you only have one night to experience a village life style of Mt.
-            Fuji, take this unique glamping stay and community-based ecotour
-            package! Enjoy local-style dinner (BBQ, etc.) at our private
-            glamping seeing majestic views of Mt. Fuji. You can also select one
-            full day ecotour from Village Culture E-bike, Nature E-bike, Culture
-            Walk, Forest Walk, etc.
-          </p>
-          <table>
-            <tr>
-              <th></th>
-              <th>ltinerary</th>
-            </tr>
-            <tr>
-              <td>Day 1</td>
-              <td>
-                14:10 Meet at Shin-Fuji Station -- - Van ---15:00 Mt. Fuji
-                Satoyama Vacation --- Local Dinner(BBQ) dinner --- Free time ---
-                overnight
-              </td>
-            </tr>
 
-            <tr>
-              <td>Day 2</td>
-              <td>
-                Morning Walk --- Local breakfast - -- 10:30 Check-out *One full
-                day ecotour (Select one from one day ecotours 1~ 6), Local
-                Lunch) 16:30 Shin-fuji station Drop-off
-              </td>
-            </tr>
-          </table>
+        <input id="block-04" type="checkbox" class="toggle" />
+        <label class="Label" for="block-04"
+          >3D2N Private Ecotours and Glamping Package</label
+        >
+        <div class="content">
+          <div class="grid-2">
+            <p>
+              Enjoy nature and culture ecotours by local English-speaking guides
+              in and around Mt. Fuji staying at private glamping site (only for
+              two small groups) seeing majestic views of Mt. Fuji. Early morning
+              nature walks are available everyday in Mt. Fuji National Park. You
+              can select one full-day ecotour from Village Culture E-bike,
+              Nature E-bike, Culture Walk, Forest Walk, Farm-to-Table Tours,
+              etc.
+            </p>
+            <table>
+              <tr>
+                <th></th>
+                <th>ltinerary</th>
+              </tr>
+              <tr>
+                <td>Day 1</td>
+                <td>
+                  14:10 Meet at Shin-Fuji Station --- Van --- 15:00 FUGAKU House
+                  --- Dinner: Local Japanese Cuisine (Catering)--- Free time ---
+                  Overnight
+                </td>
+              </tr>
+
+              <tr>
+                <td>Day 2</td>
+                <td>
+                  Local breakfast *One full day ecotour (Select one from one day
+                  ecotours 1~6) + Farm-to-Table Tours (May to Nov ONLY), Local
+                  Lunch --- Local Dinner (BBQ, Local Restaurant or Hotpot) ---
+                  Overnight
+                </td>
+              </tr>
+
+              <tr>
+                <td>Day 3</td>
+                <td>
+                  Morning Walk (if our guests wish!) 10:30 Check-out 11:30
+                  Shin-fuji station Drop-off *Optional Ecotour is available for
+                  additional fees.
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <input id="block-05" type="checkbox" class="toggle" />
+        <label class="Label" for="block-05"
+          >2D1N Private Ecotours and Glamping Package</label
+        >
+        <div class="content">
+          <div class="grid-2">
+            <p>
+              f you only have one night to experience a village life style of
+              Mt. Fuji, take this unique glamping stay and community-based
+              ecotour package! Enjoy local-style dinner (BBQ, etc.) at our
+              private glamping seeing majestic views of Mt. Fuji. You can also
+              select one full day ecotour from Village Culture E-bike, Nature
+              E-bike, Culture Walk, Forest Walk, etc.
+            </p>
+            <table>
+              <tr>
+                <th></th>
+                <th>ltinerary</th>
+              </tr>
+              <tr>
+                <td>Day 1</td>
+                <td>
+                  14:10 Meet at Shin-Fuji Station -- - Van ---15:00 Mt. Fuji
+                  Satoyama Vacation --- Local Dinner(BBQ) dinner --- Free time
+                  --- overnight
+                </td>
+              </tr>
+
+              <tr>
+                <td>Day 2</td>
+                <td>
+                  Morning Walk --- Local breakfast - -- 10:30 Check-out *One
+                  full day ecotour (Select one from one day ecotours 1~ 6),
+                  Local Lunch) 16:30 Shin-fuji station Drop-off
+                </td>
+              </tr>
+            </table>
+          </div>
         </div>
         <h4>Day Ecotours</h4>
         <div class="grid-2">
@@ -565,254 +500,284 @@
           </table>
         </div>
         <div>
-          <h5>①Mt. Fuji Nature E-bike Ecotour</h5>
-          <div class="grid-2">
-            <p>
-              Exploring Mt Fuji by E-bike in this unique one-day ecotour. Visit
-              Lake Tanuki National Park, ride through a traditional Japanese
-              village, see falls and try fresh spring water from Mt Fuji. Enjoy
-              fresh rainbow trout lunch at a local trout-farm and then ride to
-              the World Heritage Shiraito falls. Finish the day at our glamping
-              site with a local craft beer sounded by paddy field in front of
-              Mt. Fuji!
-            </p>
+          <input id="block-06" type="checkbox" class="toggle" />
+          <label class="Label" for="block-06"
+            >①Mt. Fuji Nature E-bike Ecotour</label
+          >
+          <div class="content">
+            <div class="grid-2">
+              <p>
+                Exploring Mt Fuji by E-bike in this unique one-day ecotour.
+                Visit Lake Tanuki National Park, ride through a traditional
+                Japanese village, see falls and try fresh spring water from Mt
+                Fuji. Enjoy fresh rainbow trout lunch at a local trout-farm and
+                then ride to the World Heritage Shiraito falls. Finish the day
+                at our glamping site with a local craft beer sounded by paddy
+                field in front of Mt. Fuji!
+              </p>
 
-            <table>
-              <tr>
-                <td>09:40</td>
-                <td>
-                  Shin-fuji Station Pick-up<br />
-                  - E-bike in and around NP<br />
-                  (Lake Tanuki National Park and Shiraito Waterfalls National
-                  Park)<br />
-                  - Local Lunch<br />
-                  - Local Beer or Green Tea
-                </td>
-              </tr>
+              <table>
+                <tr>
+                  <td>09:40</td>
+                  <td>
+                    Shin-fuji Station Pick-up<br />
+                    - E-bike in and around NP<br />
+                    (Lake Tanuki National Park and Shiraito Waterfalls National
+                    Park)<br />
+                    - Local Lunch<br />
+                    - Local Beer or Green Tea
+                  </td>
+                </tr>
 
-              <tr>
-                <td>16:30</td>
-                <td>Shin-fuji Station Drop-off</td>
-              </tr>
+                <tr>
+                  <td>16:30</td>
+                  <td>Shin-fuji Station Drop-off</td>
+                </tr>
 
-              <tr>
-                <td></td>
-                <td>
-                  * The program will change due to the weather conditions.
-                </td>
-              </tr>
-            </table>
+                <tr>
+                  <td></td>
+                  <td>
+                    * The program will change due to the weather conditions.
+                  </td>
+                </tr>
+              </table>
+            </div>
           </div>
         </div>
         <div>
-          <h5>②Village E-bike Ecotour at the foot of Mt. Fuji</h5>
-          <div class="grid-2">
-            <p>
-              Admire Mt. Fuji as you ride through the beautiful ‘Satoyama’
-              (traditional rural landscape of Japan) and explore life at the
-              foot of Mt. Fuji. Visit breathtaking World Heritage Shiraito
-              Waterfalls, which gushes clear spring water from Mt. Fuji. Enjoy
-              traditional local foods made by warm-hearted locals. In spring,
-              fall and winter, visit the historic Japanese sake brewery guided
-              by an 18th generation owner. In summer, enjoy the cold spring
-              water from Mt. Fuji at fresh water spring river from Mt. Fuji and
-              local beers! Feel the wind in your face, enjoy Mt. Fuji’s water
-              and touch the heart of the local life!!
-            </p>
+          <input id="block-07" type="checkbox" class="toggle" />
+          <label class="Label" for="block-07"
+            >②Village E-bike Ecotour at the foot of Mt. Fuji</label
+          >
+          <div class="content">
+            <div class="grid-2">
+              <p>
+                Admire Mt. Fuji as you ride through the beautiful ‘Satoyama’
+                (traditional rural landscape of Japan) and explore life at the
+                foot of Mt. Fuji. Visit breathtaking World Heritage Shiraito
+                Waterfalls, which gushes clear spring water from Mt. Fuji. Enjoy
+                traditional local foods made by warm-hearted locals. In spring,
+                fall and winter, visit the historic Japanese sake brewery guided
+                by an 18th generation owner. In summer, enjoy the cold spring
+                water from Mt. Fuji at fresh water spring river from Mt. Fuji
+                and local beers! Feel the wind in your face, enjoy Mt. Fuji’s
+                water and touch the heart of the local life!!
+              </p>
 
-            <table>
-              <tr>
-                <td>09:40</td>
-                <td>
-                  Shin-fuji Station Pick-up<br />
-                  - E-bike in the villages<br />
-                  @ the foot of Mt. Fuji<br />
-                  (Shiraito Waterfalls, Cultural<br />
-                  sites, etc.)<br />
-                  - Local Lunch<br />
-                  - Local Sake / Beer Brewery
-                </td>
-              </tr>
+              <table>
+                <tr>
+                  <td>09:40</td>
+                  <td>
+                    Shin-fuji Station Pick-up<br />
+                    - E-bike in the villages<br />
+                    @ the foot of Mt. Fuji<br />
+                    (Shiraito Waterfalls, Cultural<br />
+                    sites, etc.)<br />
+                    - Local Lunch<br />
+                    - Local Sake / Beer Brewery
+                  </td>
+                </tr>
 
-              <tr>
-                <td>16:30</td>
-                <td>Shin-fuji Station Drop-off</td>
-              </tr>
+                <tr>
+                  <td>16:30</td>
+                  <td>Shin-fuji Station Drop-off</td>
+                </tr>
 
-              <tr>
-                <td></td>
-                <td>
-                  * The program will change due to the weather conditions.
-                </td>
-              </tr>
-            </table>
+                <tr>
+                  <td></td>
+                  <td>
+                    * The program will change due to the weather conditions.
+                  </td>
+                </tr>
+              </table>
+            </div>
           </div>
         </div>
         <div>
-          <h5>③Fujinomiya Township and Culture Ecotour</h5>
-          <div class="grid-2">
-            <p>
-              Fujinomiya City is the gateway to Mt. Fuji with the main Sengen
-              shrine, a UNESCO World Heritage site, which was built for the sole
-              purpose of worshiping and showing respect to this iconic mountain.
-              Visit a traditional craftsman and learn how to sharpen Japanese
-              cooking knives. Get dressed in a kimono at the local kimono shop,
-              walk to the shrine with a local English-speaking guide and learn
-              about the history and local rituals that have taken place here for
-              centuries. Enjoy authentic local food, including Fujinomiya’s
-              famous Yakisoba. At the end of the tour, learn how to enjoy
-              Shizuoka green tea by the owner of the tea farm with the Japanese
-              sweet.
-            </p>
+          <input id="block-08" type="checkbox" class="toggle" />
+          <label class="Label" for="block-08"
+            >③Fujinomiya Township and Culture Ecotour</label
+          >
+          <div class="content">
+            <div class="grid-2">
+              <p>
+                Fujinomiya City is the gateway to Mt. Fuji with the main Sengen
+                shrine, a UNESCO World Heritage site, which was built for the
+                sole purpose of worshiping and showing respect to this iconic
+                mountain. Visit a traditional craftsman and learn how to sharpen
+                Japanese cooking knives. Get dressed in a kimono at the local
+                kimono shop, walk to the shrine with a local English-speaking
+                guide and learn about the history and local rituals that have
+                taken place here for centuries. Enjoy authentic local food,
+                including Fujinomiya’s famous Yakisoba. At the end of the tour,
+                learn how to enjoy Shizuoka green tea by the owner of the tea
+                farm with the Japanese sweet.
+              </p>
 
-            <table>
-              <tr>
-                <td>09:40</td>
-                <td>
-                  <strong>Shin-fuji Station Pick-up</strong>
-                  - Knife shaving<br />
-                  experience<br />
-                  @ knife shop<br />
-                  - Kimono Wearing<br />
-                  @ kimono shop<br />
-                  - Mt. Fuji Shrine Visit<br />
-                  - Local Lunch<br />
-                  - Green Tea Farm Visit and<br />
-                  Experience @ green tea shop<br />
-                  * Enjoy tea with local sweet!
-                </td>
-              </tr>
+              <table>
+                <tr>
+                  <td>09:40</td>
+                  <td>
+                    <strong>Shin-fuji Station Pick-up</strong>
+                    - Knife shaving<br />
+                    experience<br />
+                    @ knife shop<br />
+                    - Kimono Wearing<br />
+                    @ kimono shop<br />
+                    - Mt. Fuji Shrine Visit<br />
+                    - Local Lunch<br />
+                    - Green Tea Farm Visit and<br />
+                    Experience @ green tea shop<br />
+                    * Enjoy tea with local sweet!
+                  </td>
+                </tr>
 
-              <tr>
-                <td>16:30</td>
-                <td>Shin-fuji Station Drop-off</td>
-              </tr>
+                <tr>
+                  <td>16:30</td>
+                  <td>Shin-fuji Station Drop-off</td>
+                </tr>
 
-              <tr>
-                <td></td>
-                <td>
-                  *Not available from 25th Dec. to 5th Jan (New Year Holiday)
-                </td>
-              </tr>
-            </table>
+                <tr>
+                  <td></td>
+                  <td>
+                    *Not available from 25th Dec. to 5th Jan (New Year Holiday)
+                  </td>
+                </tr>
+              </table>
+            </div>
           </div>
         </div>
         <div>
-          <h5>④Mt. Fuji Hokusai Walk (NEW)</h5>
-          <div class="grid-2">
-            <p>
-              Have you ever seen ukiyoe paintings by one of the most world
-              famous artists, Katsushika Hokusai and wished to view Mt. Fuji
-              like him someday in Japan? Actually, our local town, Fujinomiya,
-              located at the western foot of Mt. Fuji, is where many of the
-              famous 36 Views of Mount Fuji and 100 Views of Mount Fuji were
-              painted. In addition, unlike the Fuji Five Lakes and Hakone, where
-              many tourists visit, our area still retains its authentic culture
-              and ancient landscape. You can walk through different villages,
-              shrines and temples, view Mt. Fuji like Hokusai.
-            </p>
+          <input id="block-09" type="checkbox" class="toggle" />
+          <label class="Label" for="block-09"
+            >④Mt. Fuji Hokusai Walk (NEW)</label
+          >
+          <div class="content">
+            <div class="grid-2">
+              <p>
+                Have you ever seen ukiyoe paintings by one of the most world
+                famous artists, Katsushika Hokusai and wished to view Mt. Fuji
+                like him someday in Japan? Actually, our local town, Fujinomiya,
+                located at the western foot of Mt. Fuji, is where many of the
+                famous 36 Views of Mount Fuji and 100 Views of Mount Fuji were
+                painted. In addition, unlike the Fuji Five Lakes and Hakone,
+                where many tourists visit, our area still retains its authentic
+                culture and ancient landscape. You can walk through different
+                villages, shrines and temples, view Mt. Fuji like Hokusai.
+              </p>
 
-            <table>
-              <tr>
-                <td>09:40</td>
-                <td>
-                  Shin-fuji Station Pick-up<br />
-                  - Authentic Village Walk like<br />
-                  Hokusai<br />
-                  - Visit Local Temples and Shrine<br />
-                  - Japanese Fude (筆) Drawing<br />
-                  - Local Bento Lunch with SAKE
-                </td>
-              </tr>
-              <tr>
-                <td>16:30</td>
-                <td>Shin-fuji Station Drop-off</td>
-              </tr>
-            </table>
+              <table>
+                <tr>
+                  <td>09:40</td>
+                  <td>
+                    Shin-fuji Station Pick-up<br />
+                    - Authentic Village Walk like<br />
+                    Hokusai<br />
+                    - Visit Local Temples and Shrine<br />
+                    - Japanese Fude (筆) Drawing<br />
+                    - Local Bento Lunch with SAKE
+                  </td>
+                </tr>
+                <tr>
+                  <td>16:30</td>
+                  <td>Shin-fuji Station Drop-off</td>
+                </tr>
+              </table>
+            </div>
           </div>
         </div>
         <div>
-          <h5>⑤Mt. Fuji Hiking and Shrine Ecotour</h5>
-          <div class="grid-2">
-            <p>
-              Start with a visit to Mt Fuji Shrine, which has a history of over
-              2000 years and was designated as a UNESCO World Heritage Site.
-              Then, enjoy a leisurely day hike to see both the natural and
-              cultural side of Mt. Fuji. Hike from the 5th station of the
-              Fujinomiya mountain route to Hoei crater, where you can enjoy
-              lunch and the majestic views. Great for family trip!!
-            </p>
+          <input id="block-10" type="checkbox" class="toggle" />
+          <label class="Label" for="block-10"
+            >⑤Mt. Fuji Hiking and Shrine Ecotour</label
+          >
+          <div class="content">
+            <div class="grid-2">
+              <p>
+                Start with a visit to Mt Fuji Shrine, which has a history of
+                over 2000 years and was designated as a UNESCO World Heritage
+                Site. Then, enjoy a leisurely day hike to see both the natural
+                and cultural side of Mt. Fuji. Hike from the 5th station of the
+                Fujinomiya mountain route to Hoei crater, where you can enjoy
+                lunch and the majestic views. Great for family trip!!
+              </p>
 
-            <table>
-              <tr>
-                <td>09:40</td>
-                <td>
-                  Shin-fuji Station Pick-up<br />
-                  - Visit Mt. Fuji Shrine<br />
-                  - Houei Crater and Mt. Fuji<br />
-                  Forest Walk<br />
-                  - Local Lunch
-                </td>
-              </tr>
-              <tr>
-                <td>16:30</td>
-                <td>Shin-fuji Station Drop-off</td>
-              </tr>
-              <tr>
-                <td></td>
-                <td>
-                  • Season: 15th of June ~ 15th October<br />
-                  • Need additional costs for special bus rides<br />
-                  during Mt. Fuji climbing periods.<br />
-                  • a ¥1,000 Mt Fuji Conservation<br />
-                  Contribution Fee is included in the tour price.<br />
-                  • The program will change due to the<br />
-                  weather conditions.
-                </td>
-              </tr>
-            </table>
+              <table>
+                <tr>
+                  <td>09:40</td>
+                  <td>
+                    Shin-fuji Station Pick-up<br />
+                    - Visit Mt. Fuji Shrine<br />
+                    - Houei Crater and Mt. Fuji<br />
+                    Forest Walk<br />
+                    - Local Lunch
+                  </td>
+                </tr>
+                <tr>
+                  <td>16:30</td>
+                  <td>Shin-fuji Station Drop-off</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>
+                    • Season: 15th of June ~ 15th October<br />
+                    • Need additional costs for special bus rides<br />
+                    during Mt. Fuji climbing periods.<br />
+                    • a ¥1,000 Mt Fuji Conservation<br />
+                    Contribution Fee is included in the tour price.<br />
+                    • The program will change due to the<br />
+                    weather conditions.
+                  </td>
+                </tr>
+              </table>
+            </div>
           </div>
         </div>
         <div>
-          <h5></h5>
-          <div class="grid-2">
-            <p>
-              Start with a visit to Mt Fuji Shrine, which has a history of over
-              2000 years and was designated as a UNESCO World Heritage Site.
-              Then, enjoy a leisurely day hike to see both the natural and
-              cultural side of Mt. Fuji. Hike from the 5th station of the
-              Fujinomiya mountain route to Hoei crater, where you can enjoy
-              lunch and the majestic views. Great for family trip!!
-            </p>
+          <input id="block-11" type="checkbox" class="toggle" />
+          <label class="Label" for="block-11"
+            >⑥Nature Walk around Mt. FUJI (NEW)</label
+          >
+          <div class="content">
+            <div class="grid-2">
+              <p>
+                Start with a visit to Mt Fuji Shrine, which has a history of
+                over 2000 years and was designated as a UNESCO World Heritage
+                Site. Then, enjoy a leisurely day hike to see both the natural
+                and cultural side of Mt. Fuji. Hike from the 5th station of the
+                Fujinomiya mountain route to Hoei crater, where you can enjoy
+                lunch and the majestic views. Great for family trip!!
+              </p>
 
-            <table>
-              <tr>
-                <td>09:40</td>
-                <td>
-                  Shin-fuji Station Pick-up<br />
-                  - Visit Mt. Fuji Shrine<br />
-                  - Houei Crater and Mt. Fuji<br />
-                  Forest Walk<br />
-                  - Local Lunch
-                </td>
-              </tr>
-              <tr>
-                <td>16:30</td>
-                <td>Shin-fuji Station Drop-off</td>
-              </tr>
-              <tr>
-                <td></td>
-                <td>
-                  • Season: 15th of June ~ 15th October<br />
-                  • Need additional costs for special bus rides<br />
-                  during Mt. Fuji climbing periods.<br />
-                  • a ¥1,000 Mt Fuji Conservation<br />
-                  Contribution Fee is included in the tour price.<br />
-                  • The program will change due to the<br />
-                  weather conditions.
-                </td>
-              </tr>
-            </table>
+              <table>
+                <tr>
+                  <td>09:40</td>
+                  <td>
+                    Shin-fuji Station Pick-up<br />
+                    - Visit Mt. Fuji Shrine<br />
+                    - Houei Crater and Mt. Fuji<br />
+                    Forest Walk<br />
+                    - Local Lunch
+                  </td>
+                </tr>
+                <tr>
+                  <td>16:30</td>
+                  <td>Shin-fuji Station Drop-off</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>
+                    • Season: 15th of June ~ 15th October<br />
+                    • Need additional costs for special bus rides<br />
+                    during Mt. Fuji climbing periods.<br />
+                    • a ¥1,000 Mt Fuji Conservation<br />
+                    Contribution Fee is included in the tour price.<br />
+                    • The program will change due to the<br />
+                    weather conditions.
+                  </td>
+                </tr>
+              </table>
+            </div>
           </div>
         </div>
       </section>
@@ -887,6 +852,7 @@
       </section>
       <section>
         <h2>Customer Reviews</h2>
+
         <div class="review">
           <img src="./assets/user-50.png" />
           <div class="review-comment">
@@ -924,7 +890,9 @@
       </section>
       <section>
         <h2>Vehicles</h2>
-
+        <p>
+          The vehicle will be selected by us at the time of your reservation.
+        </p>
         <div class="vehicle">
           <div class="swiper vehicle-slider">
             <div class="swiper-wrapper">
@@ -950,9 +918,9 @@
           <div class="vehicle-content">
             <h4>Robinson 771</h4>
             <p>
-              Rental Rates Class C RV/Motorhome : JPY 31900~/Day Seating
-              Capacity: 7 Sleeping Capacity: 5 Adults＋2 Children ※We may offer
-              different models of RVs depending on the availability.
+              Rental Rates Class C RV/Motorhome : Capacity: 7 Sleeping Capacity:
+              5 Adults＋2 Children ※We may offer different models of RVs
+              depending on the availability.
             </p>
           </div>
         </div>
@@ -960,16 +928,34 @@
           <div class="swiper vehicle-slider">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img src="./assets/Robinson7/771-1.jpg" />
+                <img src="./assets/RobinsonAI/1.jpg" />
               </div>
               <div class="swiper-slide">
-                <img src="./assets/Robinson7/771-2.png" />
+                <img src="./assets/RobinsonAI/2.jpg" />
               </div>
+
               <div class="swiper-slide">
-                <img src="./assets/Robinson7/771-3.jpg" />
+                <img src="./assets/RobinsonAI/3.jpg" />
               </div>
+
               <div class="swiper-slide">
-                <img src="./assets/Robinson7/771-4.jpg" />
+                <img src="./assets/RobinsonAI/4.jpg" />
+              </div>
+
+              <div class="swiper-slide">
+                <img src="./assets/RobinsonAI/5.jpg" />
+              </div>
+
+              <div class="swiper-slide">
+                <img src="./assets/RobinsonAI/6.jpg" />
+              </div>
+
+              <div class="swiper-slide">
+                <img src="./assets/RobinsonAI/7.jpg" />
+              </div>
+
+              <div class="swiper-slide">
+                <img src="./assets/RobinsonAI/8.jpg" />
               </div>
             </div>
 
@@ -977,11 +963,11 @@
             <div class="swiper-button-prev"></div>
           </div>
           <div class="vehicle-content">
-            <h4>Robinson 771</h4>
+            <h4>Robinson AI</h4>
             <p>
-              Rental Rates Class C RV/Motorhome : JPY 31900~/Day Seating
-              Capacity: 7 Sleeping Capacity: 5 Adults＋2 Children ※We may offer
-              different models of RVs depending on the availability.
+              Rental Rates Class C RV/Motorhome : Seating Capacity: 7 Sleeping
+              Capacity: 4 Adults＋2 Children ※We may offer different models of
+              RVs depending on the availability.
             </p>
           </div>
         </div>
@@ -992,30 +978,486 @@
         <div class="faq-wrapper">
           <div class="faq">
             <input id="faq-01" type="checkbox" name="tabs" />
-            <label for="faq-01">Question</label>
+            <label for="faq-01"
+              >Do I need to purchase travel insurance before travelling?</label
+            >
             <div class="faq-answer">
-              <p>Answer</p>
+              <p>
+                Absolutely. All passengers travelling with Intrepid are required
+                to purchase travel insurance before the start of their trip.
+                Your travel insurance details will be recorded by your leader on
+                the first day of the trip. Due to the varying nature,
+                availability and cost of health care around the world, travel
+                insurance is very much an essential and necessary part of every
+                journey.
+              </p>
             </div>
           </div>
+
           <div class="faq">
             <input id="faq-02" type="checkbox" name="tabs" />
-            <label for="faq-02">Question</label>
+            <label for="faq-02">Do I need a visa to travel to Japan?</label>
             <div class="faq-answer">
-              <p>Answer</p>
+              <p>
+                Under current restrictions, a visa is required to enter Japan as
+                a tourist. We recommend you apply for your visa no later than
+                one month before your departure date. Please contact your local
+                consulate or embassy for more information.
+              </p>
+              <p>
+                This page is for general information only and may be subject to
+                change. It is your responsibility to obtain relevant visa and
+                travel information required for entry, departure and travel to
+                each country or region you visit on your trip. You should
+                confirm these with the relevant embassies and/or consulates.
+              </p>
             </div>
           </div>
+
           <div class="faq">
             <input id="faq-03" type="checkbox" name="tabs" />
-            <label for="faq-03">Question</label>
+            <label for="faq-03">Is tipping customary in Japan?</label>
             <div class="faq-answer">
-              <p>Answer</p>
+              <p>
+                Tipping isn't customary in Japan and is not expected – in fact,
+                it will sometimes be considered impolite. Some inns or ryokans
+                may leave a small envelope in your room where a small gratuity
+                can be left for housekeeping staff.
+              </p>
             </div>
           </div>
+
           <div class="faq">
             <input id="faq-04" type="checkbox" name="tabs" />
-            <label for="faq-04">Question</label>
+            <label for="faq-04"
+              >What is the internet access like in Japan?</label
+            >
             <div class="faq-answer">
-              <p>Answer</p>
+              <p>
+                Internet access is excellent in Japan, with one of the most
+                developed high-speed internet networks in the world. Internet
+                cafes and wi-fi hotspots are easily found in most cities and
+                major towns.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq">
+            <input id="faq-05" type="checkbox" name="tabs" />
+            <label for="faq-05">Can I use my mobile while in Japan?</label>
+            <div class="faq-answer">
+              <p>
+                Mobile phone coverage is excellent in Japan but be aware that
+                talking loudly on your phone in public places (like in train
+                carriages) is frowned upon. You will be expected to hide your
+                mouth behind your hand if you must take a call in public. If you
+                want to use your mobile phone, ensure global roaming is
+                activated before you arrive (but be aware of the fees this may
+                incur).
+              </p>
+            </div>
+          </div>
+
+          <div class="faq">
+            <input id="faq-06" type="checkbox" name="tabs" />
+            <label for="faq-06">What are the toilets like in Japan?</label>
+            <div class="faq-answer">
+              <p>
+                In Japan, toilets range from high-tech bidets to standard
+                western-style flushable toilets to squat toilets, which are
+                still common outside the city. Sometimes you may need to pay for
+                toilet paper, which can usually be purchased from a vending
+                machine nearby.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq">
+            <input id="faq-07" type="checkbox" name="tabs" />
+            <label for="faq-07">What will it cost for a...?</label>
+            <div class="faq-answer">
+              <p>Japan's unit of currency is the yen:</p>
+              <ul>
+                <li>Bento box = YEN 550</li>
+                <li>Bowl of ramen = YEN 650-1,200</li>
+                <li>Can of beer = YEN 250</li>
+                <li>Coffee = YEN 100-600</li>
+                <li>Convenience store snack = YEN 200-500</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="faq">
+            <input id="faq-08" type="checkbox" name="tabs" />
+            <label for="faq-08">Can I drink the water in Japan?</label>
+            <div class="faq-answer">
+              <p>
+                Drinking water from taps in Japan is considered safe. For
+                environmental reasons, try to use a refillable water bottle
+                rather than buying bottled water. Major cities often have water
+                fountains in train stations.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq">
+            <input id="faq-09" type="checkbox" name="tabs" />
+            <label for="faq-09"
+              >Are credit cards widely accepted in Japan?</label
+            >
+            <div class="faq-answer">
+              <p>
+                Major credit cards are accepted by some stores; however, Japan
+                is still very much a cash culture and as such, some places may
+                not accept credit cards. Ensure you carry enough cash to cover
+                purchases.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq">
+            <input id="faq-10" type="checkbox" name="tabs" />
+            <label for="faq-10">What is ATM access like in Japan?</label>
+            <div class="faq-answer">
+              <p>
+                ATMs are common in Japan but unfortunately many of them don't
+                accept foreign-issued cards. However, you can access cash from
+                non-Japanese bank accounts via the Cirrus and Maestro systems at
+                all post office ATMs around the country, as well as ATMs at
+                7-Eleven convenience stores.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq">
+            <input id="faq-11" type="checkbox" name="tabs" />
+            <label for="faq-11"
+              >What public holidays are celebrated in Japan?</label
+            >
+            <div class="faq-answer">
+              <ul>
+                <li>1 Jan: New Year's Day</li>
+                <li>*Coming of Age Day</li>
+                <li>11 Feb: National Foundation Day</li>
+                <li>23 Feb: Emperor's Birthday</li>
+                <li>*20 Mar: Vernal/Spring Equinox Day</li>
+                <li>29 Apr: Showa Day</li>
+                <li>3 May: Constitution Day</li>
+                <li>4 May: Greenery Day</li>
+                <li>5 May: Children's Day</li>
+                <li>*Jul: Marine Day, also known as Sea or Ocean Day</li>
+                <li>11 Aug: Mountain Day</li>
+                <li>*Sep: Respect-for-the-Aged Day</li>
+                <li>*23 Sep: Autumnal Equinox Day</li>
+                <li>*Oct: Health and Sports Day</li>
+                <li>3 Nov: Culture Day</li>
+                <li>23 Nov: Labour Thanksgiving Day</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="faq">
+            <input id="faq-12" type="checkbox" name="tabs" />
+            <label for="faq-12"
+              >When is the best time to travel to Japan?</label
+            >
+            <div class="faq-answer">
+              <p>
+                March, April and May are excellent months to holiday in Japan
+                and, as a result, are the busiest. The weather is usually fine
+                and beautiful cherry blossoms are in full bloom. September,
+                October and November are also great months to visit Japan on
+                holidays, as the days are warm but not humid and the autumn
+                colours are out. Winter, while cold, offers great conditions for
+                skiing, snowboarding, going to snow festivals and admiring the
+                stunning mountain scenery. The summer months can be quite humid,
+                but tourist areas are generally quieter and there are many fun
+                festivals and fireworks displays to enjoy.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq">
+            <input id="faq-13" type="checkbox" name="tabs" />
+            <label for="faq-13">What is the weather like in Japan?</label>
+            <div class="faq-answer">
+              <p>
+                Spring (March to May): temperatures range from 10 to 20°C, with
+                conditions getting sunnier and clearer towards the end of the
+                season.
+              </p>
+              <p>
+                Summer (June to August): temperatures range from 21 to 32°C
+                depending on where you are. It’s warmer in the south than in the
+                north. You can expect some rain in June, and it can get quite
+                humid towards the end of the season.
+              </p>
+              <p>
+                Autumn (September to November): temperatures range from 7 to
+                20°C. The humidity starts to calm down in September, but days
+                stay warm until October. Nights can be chilly.
+              </p>
+              <p>
+                Winter (December to February): break out the coats, temperatures
+                during winter range from 0 to 15°C. The mountains and the north
+                experience snowfall.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq">
+            <input id="faq-14" type="checkbox" name="tabs" />
+            <label for="faq-14">How safe is Japan?</label>
+            <div class="faq-answer">
+              <p>
+                Japan is generally safe and is rated among the safest countries
+                in the world. Reports of crime such as theft are very low and
+                travellers are often stunned by the fact that locals leave
+                belongings unaccompanied in cafes and bars (though we certainly
+                don’t recommend it!).
+              </p>
+            </div>
+          </div>
+
+          <div class="faq">
+            <input id="faq-15" type="checkbox" name="tabs" />
+            <label for="faq-15">What should I wear in Japan?</label>
+            <div class="faq-answer">
+              <p>
+                Summer months can be incredibly hot and sticky, so loose,
+                lightweight and breathable clothing is essential.
+              </p>
+              <p>
+                Spring and autumn can be crisp and cold, so you might want to
+                pack thermal layers in addition to your coat and boots.
+              </p>
+              <p>
+                Outside of Hokkaido and the mountains, the winter temperatures
+                in Japan are manageable as long as you have regular cold-weather
+                clothes like a good coat, pair of gloves, a winter hat and a
+                scarf.
+              </p>
+              <p>
+                The style of dress common for women in Japan may be a little
+                more covered up than you are used to, particularly outside the
+                major cities.
+              </p>
+              <p>
+                Packing comfortable trousers is essential as you may find
+                yourself sitting cross-legged on the floor during your stay.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq">
+            <input id="faq-16" type="checkbox" name="tabs" />
+            <label for="faq-16"
+              >What are some common phrases/words I should learn before my trip
+              to Japan?</label
+            >
+            <div class="faq-answer">
+              <p>
+                Having a basic understanding of the language and culture of the
+                country you're visiting can go a long way when it comes to, not
+                only communicating efficiently but your overall trip experience
+                as well. Some common phrases you need to learn are:
+              </p>
+              <ul>
+                <li>'hello' - Konnichiwa</li>
+                <li>'good morning' - Ohayō</li>
+                <li>'thank you' - Arigatou Gozaimasu</li>
+                <li>'please' - Onegaishimasu</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="faq">
+            <input id="faq-17" type="checkbox" name="tabs" />
+            <label for="faq-17"
+              >What religions do they practice in Japan?</label
+            >
+            <div class="faq-answer">
+              <p>
+                There are two dominant religions in Japan - Shinto and Buddhism.
+                The majority of Japanese people practice both simultaneously,
+                however, there is a small number of the population that practice
+                other religions such as Christianity, Judaism, Hinduism, and
+                Islam.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq">
+            <input id="faq-18" type="checkbox" name="tabs" />
+            <label for="faq-18"
+              >What are the best places to visit in Japan?</label
+            >
+            <div class="faq-answer">
+              <p>
+                From the neon-lit streets of Tokyo to the peaceful nature of the
+                Japanese Alps, there are plenty of bucket-list destinations to
+                include on your itinerary of Japan. We know it's hard to see
+                everything but here are a few of our favourite places to visit
+                in Japan:
+              </p>
+              <ul>
+                <li>Tokyo</li>
+                <li>Osaka</li>
+                <li>Kyoto</li>
+                <li>Mt Fuji</li>
+                <li>Takayama</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="faq">
+            <input id="faq-19" type="checkbox" name="tabs" />
+            <label for="faq-19"
+              >What are the best things to see in Japan?</label
+            >
+            <div class="faq-answer">
+              <p>
+                Japan isn't short of spectacular attractions to wander through
+                and fascinating historical landmarks to marvel at but it's
+                pretty hard to do it all on your trip to Japan. So you don't
+                miss the things you simply have to see, we've put together a
+                short list of parks, temples, and monuments worth visiting.
+                Happy exploring!
+              </p>
+              <ul>
+                <li>Hiroshima Peace Park</li>
+                <li>Mt Fuji</li>
+                <li>Cherry blossom trees</li>
+                <li>Osaka Castle</li>
+                <li>Himeji Castle</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="faq">
+            <input id="faq-20" type="checkbox" name="tabs" />
+            <label for="faq-20">What should I eat in Japan?</label>
+            <div class="faq-answer">
+              <p>
+                Food lovers, including vegetarians and vegans, will be more than
+                satisfied with the variety and quality of Japanese cuisine. With
+                a focus on fresh, seasonal produce that is prepared meticulously
+                and presented beautifully, dining in Japan is a memorable
+                experience.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq">
+            <input id="faq-21" type="checkbox" name="tabs" />
+            <label for="faq-21">What drinks should I try in Japan?</label>
+            <div class="faq-answer">
+              <p>
+                From craft beer to sake, Japan has plenty of tasty liquids to
+                keep you hydrated throughout your travels. Be sure to try:
+              </p>
+              <ul>
+                <li>
+                  Sake: A traditional Japanese rice wine with a wide range of
+                  flavors.
+                </li>
+                <li>
+                  Craft Beer: Japan has a growing craft beer scene with unique
+                  and diverse brews.
+                </li>
+                <li>
+                  Green Tea: A staple in Japanese culture, available in many
+                  varieties.
+                </li>
+                <li>
+                  Matcha: A powdered green tea used in traditional tea
+                  ceremonies and in various drinks.
+                </li>
+                <li>
+                  Umeshu: A sweet and fruity plum wine that's quite popular.
+                </li>
+                <li>
+                  Shōchū: A Japanese distilled spirit that can be enjoyed neat
+                  or mixed.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="faq">
+            <input id="faq-22" type="checkbox" name="tabs" />
+            <label for="faq-22"
+              >How do I stay safe and healthy while travelling?</label
+            >
+            <div class="faq-answer">
+              <p>
+                Intrepid takes the health and safety of its travellers seriously
+                and takes every measure to ensure that trips are safe, fun, and
+                enjoyable for everyone. We recommend that all travellers check
+                with their government or national travel advisory organisation
+                for the latest information before departure:
+              </p>
+              <ul>
+                <li>
+                  From Australia? Go to:
+                  <a href="https://www.smartraveller.gov.au" target="_blank"
+                    >Smart Traveller</a
+                  >
+                </li>
+                <li>
+                  From Canada? Go to:
+                  <a href="https://travel.gc.ca" target="_blank"
+                    >Canada Travel Information</a
+                  >
+                </li>
+                <li>
+                  From the UK? Go to:
+                  <a
+                    href="https://www.gov.uk/foreign-travel-advice"
+                    target="_blank"
+                    >UK Foreign Travel Advice</a
+                  >
+                </li>
+                <li>
+                  From New Zealand? Go to:
+                  <a href="https://www.safetravel.govt.nz" target="_blank"
+                    >Safe Travel</a
+                  >
+                </li>
+                <li>
+                  From the US? Go to:
+                  <a href="https://travel.state.gov" target="_blank"
+                    >US Department of State</a
+                  >
+                </li>
+              </ul>
+              <p>
+                The World Health Organisation also provides useful health
+                information.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq">
+            <input id="faq-23" type="checkbox" name="tabs" />
+            <label for="faq-23"
+              >What is it like travelling on a small group tour?</label
+            >
+            <div class="faq-answer">
+              <p>
+                Whether you’re a seasoned traveller or you’re about to embark on
+                your first trip, travelling can be as intimidating as it is
+                exciting. That's the beauty of a small group tour. From handling
+                the logistics and organising amazing cultural activities to
+                local leaders who know each destination like the back of their
+                hand (like which street has the best markets and where to get
+                the most authentic food), travelling on a small group tour with
+                Intrepid will give you unforgettable travel experiences without
+                the hassle that comes with exploring a new place. Plus, you'll
+                have ready-made friends to share the journey with. All you have
+                to do is turn up with a healthy sense of adventure and we’ll
+                take care of the rest.
+              </p>
             </div>
           </div>
         </div>
@@ -1245,6 +1687,87 @@
       }
     });
 
-    document.addEventListener("DOMContentLoaded", function () {});
+    function updateOptions() {
+      var parentElement = document.getElementById("plan");
+      var childrenElement = document.getElementById("planDetail");
+      for (var i = 0; i < childrenElement.length; i++) {
+        childrenElement.options[i].disabled = true;
+      }
+      if (parentElement.value == "Glamping") {
+        childrenElement.options[1].disabled = false;
+        childrenElement.options[2].disabled = false;
+      } else if (parentElement.value == "Fugaku") {
+        childrenElement.options[3].disabled = false;
+      }
+      const plan = document.getElementById("plan").value;
+      const planDetail = document.getElementById("planDetail").value;
+      const members = parseInt(document.getElementById("members").value);
+      document.getElementById("simulation_price").textContent = "";
+      document.getElementById("simulation_msg").textContent = "";
+
+      if (plan && planDetail && members > 0) {
+        let adultPrice = 0;
+        let childPrice = 0;
+        let isPrivate = false;
+
+        if (planDetail == "Glamping_2D1N") {
+          if (members == 1) {
+            adultPrice = 180000;
+          } else if (members == 2) {
+            adultPrice = 90000;
+          } else if (members == 3) {
+            adultPrice = 85000;
+          } else if (members == 4) {
+            adultPrice = 80000;
+          } else if (members >= 5 && members <= 8) {
+            adultPrice = 75000;
+            isPrivate = true;
+          }
+        } else if (planDetail == "Glamping_3D2N") {
+          if (members == 1) {
+            adultPrice = 280000;
+          } else if (members == 2) {
+            adultPrice = 140000;
+          } else if (members == 3) {
+            adultPrice = 135000;
+          } else if (members == 4) {
+            adultPrice = 130000;
+          } else if (members >= 5 && members <= 8) {
+            adultPrice = 125000;
+            isPrivate = true;
+          }
+        } else if (planDetail == "Fugaku_3D2N") {
+          if (members == 1) {
+            adultPrice = 700000;
+          } else if (members == 2) {
+            adultPrice = 350000;
+          } else if (members == 3) {
+            adultPrice = 300000;
+          } else if (members == 4) {
+            adultPrice = 275000;
+          } else if (members >= 5 && members <= 8) {
+            adultPrice = 225000;
+            isPrivate = false;
+          }
+        }
+
+        const totalAdultPrice = adultPrice * members;
+        const totalPrice = totalAdultPrice;
+
+        document.getElementById(
+          "simulation_price"
+        ).textContent = `Total Price: ¥${totalPrice.toLocaleString()}`;
+
+        if (isPrivate) {
+          document.getElementById("simulation_msg").textContent =
+            "This is a private tour.";
+        }
+
+        if (members < 2) {
+          document.getElementById("simulation_msg").textContent +=
+            " Minimum 2 PAX required.";
+        }
+      }
+    }
   </script>
 </html>
