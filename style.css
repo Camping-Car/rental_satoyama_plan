@@ -1,12 +1,9 @@
 html {
   scroll-behavior: smooth;
 }
-* {
+p,
+td {
   font-family: "Fraunces", serif;
-}
-p {
-  font-family: "Fraunces", serif;
-  font-size: 1.2rem;
   line-height: 1.8rem;
 }
 img {
@@ -20,6 +17,10 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.hero-title {
+  color: white;
+  font-size: 4rem;
 }
 form {
   width: 770px;
@@ -123,41 +124,18 @@ th {
   transition: 1s;
 }
 
-h2 {
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Fraunces", serif;
-  color: white;
-  font-size: 4rem;
-  text-shadow: 1px 1px 9px black;
+  text-shadow: 1px 1px 3px black;
   font-weight: 400;
+  font-size: 1.6rem;
   margin-bottom: 1rem;
 }
-h3 {
-  font-family: "Fraunces", serif;
-  color: white;
-  font-size: 3rem;
-  text-shadow: 1px 1px 9px black;
-  font-weight: 400;
-}
 
-h4 {
-  font-family: "Fraunces", serif;
-  color: black;
-  font-size: 1.6rem;
-  text-shadow: 1px 1px 4px black;
-  font-weight: 400;
-}
-h5 {
-  font-family: "Fraunces", serif;
-  color: black;
-  text-shadow: 1px 1px 4px black;
-  font-weight: 400;
-  font-size: 1.2rem;
-  margin: 12px 0;
-}
-h6 {
-  font-size: 1.1rem;
-  margin: 12px 0;
-}
 main {
   position: relative;
   z-index: 1;
@@ -215,6 +193,18 @@ label {
   margin: 12px 0;
 }
 
+.tour-wrapper h5 {
+  height: 2.5rem;
+}
+
+.tour-wrapper {
+  overflow: hidden;
+  cursor: pointer;
+}
+.tour-wrapper img:hover {
+  transform: scale(1.2);
+  transition: 1s;
+}
 .cv-btn {
   background-color: #b7282e;
   color: white;
@@ -231,13 +221,6 @@ section {
   margin: 24px auto;
   margin-bottom: 48px;
   padding: 0 20px;
-}
-section h2 {
-  font-family: "Fraunces", serif;
-  color: black;
-  font-size: 4rem;
-  text-shadow: 1px 1px 9px white;
-  font-weight: 400;
 }
 
 #simulation_price {
@@ -345,14 +328,12 @@ section h2 {
   transition: all 0.3s;
 }
 .content {
-  /*本文*/
   height: 0;
   margin-bottom: 10px;
   padding: 0 20px;
   overflow: hidden;
 }
 .toggle:checked + .Label + .content {
-  /*開閉時*/
   height: auto;
   padding: 20px;
   transition: all 0.3s;
